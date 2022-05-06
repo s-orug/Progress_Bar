@@ -4,7 +4,7 @@ import time
 def progress_bar(current, total):
     total_length = 50
     percent = (float(current) / float(total))
-    bar = '█' * int((total_length * percent))  # other option to display '█'
+    bar = '█' * int((total_length * percent))
     bar += ' ' * (total_length - len(bar))
     print(f'\r   {bar}| {int(percent * 100)}%', end='\r')
 
